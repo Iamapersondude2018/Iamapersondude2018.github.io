@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1>HAIIIIIII :3 :3 :3 </h1>
+<title>">_<" </title>
+</head>
+<body>
+    <button id="autoClicker">button</button>
+<p id="Score"> score:0</p>   
+    <img src="https://i.ytimg.com/vi/buxGopxfTKs/maxresdefault.jpg" id="a" width="400" height="400">
+<img onclick="upgrade()"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv3yhZ3KgEGKdn4qQ_dNvjDpPe3ZwGtCFvzjWj4TWKjC6VbfahuZH2NPV9HrjvCIlHTAk:https://dictionary.cambridge.org/us/images/thumb/button_noun_002_05071.jpg%3Fversion%3D5.0.345&usqp=CAU" id="b" width="300"
+<button type="button" onclick=alert">click me or bad!</button>
+
+    <script>
+        var score=1
+        var price=4
+        var scoreAdder=1
+        document.getElementById("a").addEventListener("click", addScore)
+        document.getElementById("autoClicker").addEventListener("click", autoClicker)
+        function addScore(){
+            score=score+scoreAdder
+            document.getElementById("Score").innerText=score
+        }
+        function upgrade(){
+        
+    if(score>=4){
+        scoreAdder=scoreAdder+100
+    score=score-price}
+    if(score<4){
+alert("bad")
+location.reload(true)}
+    }    
+
+
+        
+        function autoClicker(){
+        setInterval(addScore,.00000000001)
+        }
+
+
+</script>
+</body>
+</html>
